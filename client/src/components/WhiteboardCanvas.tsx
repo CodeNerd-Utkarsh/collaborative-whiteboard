@@ -8,7 +8,8 @@ import { Stage, Layer, Line, Circle, Text, Group } from 'react-konva';
 import Konva from 'konva';
 import { v4 as uuidv4 } from 'uuid';
 import { useWhiteboard } from '../context/WhiteboardContext';
-import { useSocket, CursorPosition, DrawLine } from '../context/SocketContext';
+import { useSocket } from '../context/SocketContext';
+import type { CursorPosition, DrawLine } from '../context/SocketContext';
 import { useAuth } from '../context/AuthContext';
 
 interface WhiteboardCanvasProps {

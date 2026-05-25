@@ -5,7 +5,8 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useWhiteboard } from '../context/WhiteboardContext';
-import { useSocket, ChatMessage } from '../context/SocketContext';
+import { useSocket } from '../context/SocketContext';
+import type { ChatMessage } from '../context/SocketContext';
 import { useAuth } from '../context/AuthContext';
 
 interface ChatPanelProps {
